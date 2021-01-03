@@ -13,10 +13,11 @@ class HomeContainer extends Component {
   }
 
   render() {
-    const { children } = this.props;
+    const { children, me } = this.props;
     return (
       children &&
       children({
+        me,
         states: { ...this.state },
       })
     );
@@ -29,7 +30,9 @@ HomeContainer.defaultProps = {
 };
 
 const mapStateToProps = (state) => {
-  return {};
+  return {
+    me: state.me,
+  };
 };
 const mapDispatchToProps = { getMe };
 

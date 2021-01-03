@@ -4,8 +4,13 @@ import HomeContainer from "../../containers/Home/HomeContainer";
 function HomePage() {
   return (
     <HomeContainer>
-      {({ states }) => {
-        return <div>Home</div>;
+      {({ states, me }) => {
+        return (
+          <div>
+            <h1>Home</h1>
+            <pre>{me.isLoaded && JSON.stringify(me.payload, null, 2)}</pre>
+          </div>
+        );
       }}
     </HomeContainer>
   );

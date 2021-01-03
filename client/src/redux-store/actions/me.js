@@ -5,7 +5,7 @@ import createDispatcher from "../utils/createDispatcher";
 export function getMe() {
   return (dispatch) => {
     dispatch(createDispatcher(types.GET_ME_REQUEST, {}));
-    return request
+    request
       .me()
       .then((res) => {
         dispatch(createDispatcher(types.GET_ME_SUCCESS, res.data));

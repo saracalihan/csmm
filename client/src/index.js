@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { ConnectedRouter } from "connected-react-router";
 import configureStore, { history } from "./redux-store/configureStore";
+import "./assets/scss/style.scss";
 
 export const store = configureStore();
 ReactDOM.render(
