@@ -1,6 +1,0 @@
-{
-  "name": "home-container",
-  "version": "0.0.0",
-  "private": true,
-  "main": "./HomeContainer.js"
-}
