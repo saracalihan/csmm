@@ -1,6 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Card, CardBody, Label, Input, Button } from "reactstrap";
+
+import req from "../../services/request";
+
+const { login } = req;
 function LoginPage() {
+  const [form, setForm] = useState({
+    username: "burak",
+    password: "123456",
+  });
+  const [loader, setLoader] = useState(false);
+
+  const onInputChange = (e) => {
+    setForm({
+      ...form,
+      [e.name]: e.value,
+    });
+  };
+
+  const onSubmit = async () => {
+    setLoader(true);
+    try {
+      const response = await login({
+        ...form,
+      });
+      localStorage.setItem("csmm-token", response.data.token);
+      window.location = "/";
+    } catch (error) {
+      setLoader(false);
+      console.log(error.message);
+    }
+  };
+
   return (
     <div className="loginPage ">
       <div className="row w-100 justify-content-center">
@@ -10,7 +41,16 @@ function LoginPage() {
           </div>
           <CardBody>
             <Label for="email">Email</Label>
-            <Input type="text" name="email" id="email" placeholder="email" />
+            <Input
+              onChange={(e) => {
+                onInputChange(e.target);
+              }}
+              type="text"
+              name="username"
+              id="email"
+              value={form.username}
+              placeholder="email"
+            />
             <br />
             <Label
               for="examplePassword"
@@ -20,7 +60,11 @@ function LoginPage() {
               {/* Şifre yenileme sayfasına redirect edecek */}
             </Label>
             <Input
+              onChange={(e) => {
+                onInputChange(e.target);
+              }}
               type="password"
+              value={form.password}
               name="password"
               id="password"
               placeholder="password "
@@ -29,8 +73,25 @@ function LoginPage() {
             <div className="loginActions">
               <div className="row">
                 <div className="col-12  ">
-                  <Button outline color="primary">
-                    Sıng In
+                  <Button
+                    onClick={() => {
+                      onSubmit();
+                    }}
+                    outline
+                    color="primary"
+                    disabled={loader}
+                  >
+                    {loader ? (
+                      <div className="d-flex justify-content-center align-items-center">
+                        <span
+                          class="spinner-border spinner-border-sm"
+                          role="status"
+                          aria-hidden="true"
+                        />
+                      </div>
+                    ) : (
+                      <div>Sıng In</div>
+                    )}
                   </Button>
                 </div>
               </div>

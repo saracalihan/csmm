@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { ConnectedRouter } from "connected-react-router";
 import configureStore, { history } from "./redux-store/configureStore";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import "./assets/scss/style.scss";
 import "bootstrap/dist/css/bootstrap.css";

@@ -1,11 +1,12 @@
 import React from "react";
 import { connect } from "react-redux";
-import Routes from "./routers/routes";
+import Routers from "./routers/routes";
 
 function App() {
-  return <Routes />;
+  return <Routers />;
 }
 
 const mapStateToProps = (state) => ({});
 const mapDispatchToProps = {};
+
 export default connect(mapStateToProps, mapDispatchToProps)(App);
