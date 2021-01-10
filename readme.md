@@ -38,8 +38,6 @@ belirledigi etiketleri kolay takip etmek, ve etiket altında yorum yapabilir.
 git clone https://github.com/Buraksmn/csmm
 ```
 
-## How to start -> api
-
 ---
 
 #### How to start api
