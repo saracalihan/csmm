@@ -29,6 +29,35 @@ belirledigi etiketleri kolay takip etmek, ve etiket altında yorum yapabilir.
 | Frontend | Reactjs, Bootsrap veya material UI , |
 | Backend  | Nodejs                               |
 
+##
+
+## ⚒️ Build Setup
+
+```
+#clone
+git clone https://github.com/Buraksmn/csmm
+```
+
+## How to start -> api
+
+---
+
+#### How to start api
+
+| Package manager | install dependencies | run        |
+| :-------------- | -------------------- | :--------- |
+| npn             | npm install          | npm start  |
+| yarn            | yarn                 | yarn start |
+
+---
+
+#### How to start client
+
+| Package manager | install dependencies | run        |
+| :-------------- | -------------------- | :--------- |
+| npn             | npm install          | npm start  |
+| yarn            | yarn                 | yarn start |
+
 > NOT : Proje [[findmentor.network]][1] toplulugu katkılarıyla geliştirilip. yazılım tecrübesi kazandırmayı hedefleyen bir projedir. kendini geliştirmek veya yardımcı olmak isteyen herkes bir issue kapatabilir :)
 
 [1]: https://findmentor.network/ "findmentor.network"
