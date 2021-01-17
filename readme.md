@@ -26,8 +26,8 @@ belirledigi etiketleri kolay takip etmek, ve etiket altında yorum yapabilir.
 
 | -        | -                                    |
 | :------- | :----------------------------------- |
-| Frontend | Reactjs, Bootsrap veya material UI , |
-| Backend  | Nodejs                               |
+| Frontend | React JS, Bootstrap veya Material-UI |
+| Backend  | Node JS                              |
 
 ##
 
