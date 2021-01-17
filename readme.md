@@ -44,7 +44,7 @@ git clone https://github.com/Buraksmn/csmm
 
 | Package manager | install dependencies | run        |
 | :-------------- | -------------------- | :--------- |
-| npn             | npm install          | npm start  |
+| npm             | npm install          | npm start  |
 | yarn            | yarn                 | yarn start |
 
 ---
@@ -53,7 +53,7 @@ git clone https://github.com/Buraksmn/csmm
 
 | Package manager | install dependencies | run        |
 | :-------------- | -------------------- | :--------- |
-| npn             | npm install          | npm start  |
+| npm             | npm install          | npm start  |
 | yarn            | yarn                 | yarn start |
 
 > NOT : Proje [[findmentor.network]][1] toplulugu katkılarıyla geliştirilip. yazılım tecrübesi kazandırmayı hedefleyen bir projedir. kendini geliştirmek veya yardımcı olmak isteyen herkes bir issue kapatabilir :)
